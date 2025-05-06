@@ -1,9 +1,10 @@
+name: CI_flow
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 jobs:
-  name: CI
   build:
     runs-on: ubuntu-latest
     steps:
